@@ -1,5 +1,13 @@
+/**
+ * The type Mainb.
+ */
 public class Mainb {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         int inicio = 2008;
@@ -10,6 +18,12 @@ public class Mainb {
         mostrarResultados(primerAnioPrimo, inicio, fin);
     }
 
+    /**
+     * Es primo boolean.
+     *
+     * @param numero the numero
+     * @return the boolean
+     */
     public static boolean esPrimo(int numero) {
         if (numero <= 1) return false;
 
@@ -21,6 +35,13 @@ public class Mainb {
         return true;
     }
 
+    /**
+     * Buscar primer anio primo int.
+     *
+     * @param inicio the inicio
+     * @param fin    the fin
+     * @return the int
+     */
     public static int buscarPrimerAnioPrimo(int inicio, int fin) {
         for (int anio = inicio; anio <= fin; anio++) {
             if (esPrimo(anio)) {
@@ -30,6 +51,13 @@ public class Mainb {
         return 0;
     }
 
+    /**
+     * Mostrar resultados.
+     *
+     * @param anioPrimo the anio primo
+     * @param inicio    the inicio
+     * @param fin       the fin
+     */
     public static void mostrarResultados(int anioPrimo, int inicio, int fin) {
         System.out.println("El primer año primo encontrado es " + anioPrimo);
 
